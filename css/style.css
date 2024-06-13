@@ -1,0 +1,107 @@
+.hello::before {
+  content: "Lorem Ipsum";
+  color: red;
+  font-size: 35px;
+  margin-right: 25px;
+}
+/* .hello::after {
+    content: '\00a9';
+    margin-left: 20px;
+} */
+.hello::after {
+  content: " ";
+  width: 2px;
+  height: 30px;
+  background-color: blue;
+  margin-left: 35px;
+  display: inline-block;
+}
+
+/* header styles */
+.ul-items {
+  display: flex;
+  /* width: 400px;
+  justify-content: space-between; */
+}
+.header-wraper {
+  padding: 30px;
+  background-color: lightblue;
+}
+.nav-a {
+  position: relative;
+}
+.nav-a::after {
+  content: " ";
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: all 1s;
+}
+.nav-a:hover::after {
+  width: 100%;
+}
+.li-element:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+/* icons */
+.fa-github {
+  color: red;
+  font-size: 30px;
+  margin-right: 35px;
+  transition: all 3s;
+}
+.fb-icon {
+  color: blue;
+  font-size: 30px;
+  transition: all 3s;
+}
+
+.fa-github:hover {
+  color: #000;
+}
+.fb-icon:hover {
+  color: aqua;
+}
+
+.svg-element1 {
+    transition: all 2s;
+}
+.svg-element1:hover {
+    fill: yellow;
+}
+
+
+/* pseudo classes */
+.box {
+    width: 150px;
+    height: 150px;
+}
+/* .box:first-child {
+    background-color: red;
+}
+.box:nth-child(2) {
+    background-color: yellow;
+}
+.box:nth-child(3) {
+    background-color: green;
+}
+.box:last-child {
+    background-color: blue;
+} */
+
+
+.box:nth-child(3) .text-box {
+    color: #fff;
+}
+
+.box:nth-child(odd) {
+    background-color: yellow;
+}
+.box:nth-child(even) {
+    background-color: pink;
+}
